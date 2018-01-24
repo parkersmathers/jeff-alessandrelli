@@ -1,0 +1,532 @@
+/**
+ * Site header
+ */
+.site-header {
+  padding: 20px 0 10px;
+  border-bottom: 3px solid maroon;
+  min-height: $spacing-unit * 1.865;
+  width: 100%;
+  background-color: $background-color;
+
+  // Positioning context for the mobile navigation icon
+  position: relative;
+}
+
+.site-gif {
+  min-width: 200px;
+  max-width: 250px;
+  height: auto;
+  padding: 10px;
+  border: 1px solid pink;
+
+
+  @include media-query($on-palm) {
+    width: 100px;
+  }
+}
+
+.site-title {
+  font-size: xx-large;
+  background-color: $background-color;
+
+  &,
+  &:visited {
+    color: $green-color-light;
+    border: 1px solid red;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  @include media-query($on-palm) {
+    margin-left: 0;
+    @include relative-font-size(1.25);
+  }
+}
+
+.site-nav {
+  line-height: $base-line-height * $base-font-size * 1.5;
+  padding-left: $spacing-unit;
+
+  .nav-trigger {
+    display: none;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+
+  .page-link {
+    color: $background-color;
+    background-color: $text-color;
+    font-size: medium;
+    text-decoration: underline red;
+    // text-shadow: 1px 1px 2px gold;
+
+    &:hover {
+      color: fuchsia;
+    }
+
+    // Gaps between nav items, but not on the last one
+    &:not(:last-child) {
+      margin-right: $spacing-unit;
+    }
+  }
+
+  @include media-query($on-palm) {
+    position: absolute;
+    top: 9px;
+    right: $spacing-unit / 2;
+    background-color: $background-color;
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    text-align: right;
+    padding-left: 0;
+
+    label[for="nav-trigger"] {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 36px;
+      z-index: 2;
+      cursor: pointer;
+    }
+
+    .menu-icon {
+      display: block;
+      float: right;
+      width: 36px;
+      height: 26px;
+      line-height: 0;
+      padding-top: 10px;
+      text-align: center;
+
+      > svg path {
+        fill: skyblue;
+      }
+    }
+
+    input ~ .trigger {
+      clear: both;
+      display: none;
+    }
+
+    input:checked ~ .trigger {
+      display: block;
+      padding-bottom: 5px;
+    }
+
+    .page-link {
+      display: block;
+      padding: 5px 10px;
+      line-height: 2.5;
+      margin-left: 20px;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+
+/**
+ * Site footer
+ */
+.site-footer {
+  padding: 0 $spacing-unit;
+  background-color: green;
+  position: relative;
+  z-index: 1;
+
+  @include media-query($on-palm) {
+    padding: 0;
+  }
+}
+
+.footer-col-wrapper {
+  font-size: small;
+  color: orange;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-start;
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+  }
+}
+
+.contact-list,
+.social-media-list {
+  list-style: none;
+  margin-left: 0;
+  flex: 1;
+}
+
+.social-media-list {
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @include media-query($on-palm) {
+    line-height: 1.75;
+  }
+}
+
+
+
+/**
+ * Page content
+ */
+.page-content {
+  flex: 1;
+  display: flex;
+  padding-bottom: 100px;
+}
+
+.page-heading {
+  @include relative-font-size(1.25);
+}
+
+.post {
+  display: flex;
+  justify-content: space-around;
+
+  @include media-query($on-palm) {
+    flex-direction: column;
+  };
+}
+
+.post-list {
+  margin-left: $spacing-unit/2;
+
+  > li {
+    border-bottom: 10px solid $blue-color-dark;
+    background-color: $background-color;
+    margin: $spacing-unit;
+
+    > a {
+      font-size: x-large;
+      line-height: 2.5;
+      color: pink;
+
+      &:hover {
+        color: lawngreen;
+      }
+    }
+
+    p {
+      color: $text-color;
+      font-size: medium;
+    }
+  }
+
+  @include media-query($on-palm) {
+    margin-left: 0;
+
+    > li {
+      margin: $spacing-unit / 2;
+
+      > a {
+        line-height: 2;
+      }
+    }
+  };
+}
+
+.post-link {
+  display: block;
+  color: hotpink;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+  padding-top: 20px;
+  flex: 1;
+
+  h1 {
+    line-height: 1.1;
+  }
+
+  @include media-query($on-palm) {
+    padding-left: 0;
+  }
+}
+
+.post-title {
+  font-size: small;
+  text-transform: uppercase;
+  color: cornflowerblue;
+  background-color: $text-color;
+  font-weight: bold;
+  display: inline-block;
+
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.25);
+  }
+
+  @include media-query($on-palm) {
+    text-shadow: inherit;
+  }
+}
+
+//
+// Post content: Books, Fonograf
+//
+.post-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 3;
+
+  p:first-child {
+    display: flex;
+    width: 100%;
+    padding-left: $spacing-unit;
+    align-items: center;
+    justify-content: center;
+
+    // books gif, fonograf logo
+    img {
+      max-width: 150px;
+    }
+
+    span {
+      color: lawngreen;
+      font-size: large;
+      line-height: $base-line-height * 1.2;
+      margin: 0 auto;
+      padding: 30px 180px 0 0;
+      background-color: transparentize($background-color, .2);
+
+      a:hover {
+        color: pink;
+      }
+    }
+  }
+
+  p:last-child {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      flex: 1;
+      min-width: 25vw;
+      max-width: 30vw;
+      padding: $spacing-unit / 2;
+
+      img {
+        width: 100%;
+        height: auto;
+        border: 1px solid fuchsia;
+      }
+    }
+
+    img {
+      height: $spacing-unit * 3;
+    }
+  }
+
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+  }
+
+  h3 {
+    @include relative-font-size(1.625);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.375);
+    }
+  }
+
+  h4 {
+    @include relative-font-size(1.25);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+
+  @include media-query($on-palm) {
+    p:first-child {
+      position: inherit;
+      flex-direction: column;
+      margin-bottom: 1px;
+      padding-left: $spacing-unit/2;
+
+      > a {
+        text-align: center;
+        background-image: url("background.gif");
+      }
+
+      span {
+        width: 100%;
+        order: -1;
+        font-style: italic;
+        padding: 0;
+      }
+
+      img {
+        padding: 0;
+        width: 60%;
+      }
+    }
+
+    p:last-child {
+      margin-top: 0;
+      margin-bottom: 0;
+      flex-direction: column;
+      flex-wrap: nowrap;
+
+      a:first-child {
+        margin-top: $spacing-unit;
+      }
+
+      a {
+        min-width: 50vw;
+        max-width: 90vw;
+
+        &:nth-child(even) {
+          margin-right: 0;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+
+
+//
+// List content:
+// Poems, Essays, Reviews, Interviews, Readings
+//
+.list-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 3;
+
+  // GIF
+  img {
+    width: auto;
+  }
+
+  p {
+    color: $green-color;
+    font-size: large;
+    padding: 30px 150px 0 0;
+    line-height: 1.75;
+    background-color: transparentize($background-color, .2);
+    float: left;
+  }
+
+  ul {
+    width: 88%;
+    list-style: none;
+
+    li {
+      line-height: $base-line-height * 1.5;
+      font-size: large;
+    }
+
+    li::before {
+      content: "•";
+      color: yellow;
+      display: inline-block;
+      width: 2em;
+      margin-left: -2em;
+    }
+
+    a {
+      color: yellow;
+    }
+  }
+
+  @include media-query($on-palm) {
+
+    p, ul {
+      width: auto;
+      margin-bottom: 0;
+    }
+
+    p {
+      padding: 20px 0 0;
+    }
+
+    ul {
+
+      li::before {
+        margin-left: 0;
+      }
+    }
+
+    li:last-child {
+      padding-bottom: $spacing-unit;
+    }
+  }
+
+  @include media-query($on-laptop) {
+    flex: 2;
+  }
+}
+
+
+
+//
+// Press content: Press, Weblogging
+//
+.press-content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 3;
+
+  h5 {
+    background-color: $background-color;
+    font-size: small;
+    font-style: italic;
+    color: skyblue;
+    letter-spacing: .2em;
+    padding-top: 20px;
+  }
+
+  p {
+    background-color: $background-color;
+    font-size: large;
+    display: inline;
+    padding: 10px 0;
+    line-height: 1.5;
+    margin-right: 150px;
+    vertical-align: middle;
+    color: $text-color;
+
+    @include media-query($on-laptop) {
+      margin-right: 0;
+
+      img {
+        display: block;
+        float: right;
+        padding-right: $spacing-unit;
+      }
+    };
+  }
+
+  a {
+    color: hotpink;
+
+    &:hover {
+      color: $green-color;
+    }
+  }
+}

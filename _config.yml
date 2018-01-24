@@ -7,7 +7,7 @@ tumblr_url: "http://jeffalessandrelli.tumblr.com/"
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: minima
 plugins:
   - jekyll-livereload
 

@@ -19,7 +19,6 @@
   padding: 10px;
   border: 1px solid pink;
 
-
   @include media-query($on-palm) {
     width: 100px;
   }
@@ -39,7 +38,8 @@
 
   @include media-query($on-palm) {
     margin-left: 0;
-    @include relative-font-size(1.25);
+    // @include relative-font-size(1.25);
+    font-size: x-large;
   }
 }
 
@@ -59,7 +59,8 @@
     color: $background-color;
     background-color: $text-color;
     font-size: medium;
-    text-decoration: underline red;
+    -webkit-text-decoration: underline solid red;
+    text-decoration: underline solid red;
     // text-shadow: 1px 1px 2px gold;
 
     &:hover {

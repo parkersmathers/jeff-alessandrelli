@@ -14,7 +14,7 @@
 
 .site-gif {
   min-width: 200px;
-  max-width: 250px;
+  max-width: 80%;
   height: auto;
   padding: 10px;
   border: 1px solid pink;
@@ -304,6 +304,11 @@
       padding: 30px 180px 0 0;
       background-color: transparentize($background-color, .2);
 
+      a {
+        text-decoration: none underline;
+        color: inherit;
+      }
+
       a:hover {
         color: pink;
       }
@@ -438,18 +443,18 @@
     li {
       line-height: $base-line-height * 1.5;
       font-size: large;
+      color: yellow;
     }
 
     li::before {
       content: "•";
-      color: yellow;
+      color: inherit;
       display: inline-block;
       width: 2em;
-      margin-left: -2em;
     }
 
     a {
-      color: yellow;
+      color: inherit;
     }
   }
 

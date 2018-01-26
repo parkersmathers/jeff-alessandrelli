@@ -2,8 +2,8 @@ title: Jeff Alessandrelli
 description: >- # this means to ignore newlines until "baseurl:"
   Poetry.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://jeffalessandrelli.net" # the base hostname & protocol for your site, e.g. http://example.com
-tumblr_url: "http://jeffalessandrelli.tumblr.com/"
+url: "https://jeffalessandrelli.net" # the base hostname & protocol for your site, e.g. http://example.com
+tumblr_url: "https://jeffalessandrelli.tumblr.com/"
 
 # Build settings
 markdown: kramdown

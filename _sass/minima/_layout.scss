@@ -205,7 +205,7 @@
 
   > li {
     border-bottom: 10px solid $blue-color-dark;
-    background-color: $background-color;
+    background-color: transparentize($background-color, .2);
     margin: $spacing-unit;
 
     > a {

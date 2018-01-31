@@ -43,6 +43,7 @@
 
       link.setAttribute('class', 'post-link')
       link.setAttribute('target', '_blank')
+      link.setAttribute('rel', 'noopener')
 
       if (post.type === 'photo') {
         var image = document.createElement('img')

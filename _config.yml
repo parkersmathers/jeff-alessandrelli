@@ -10,6 +10,7 @@ social:
   links:
     - https://jeffalessandrelli.tumblr.com
 google_analytics: "UA-113483194-1"
+google_tag_manager: "GTM-5ZMTC37"
 
 # Build settings
 markdown: kramdown

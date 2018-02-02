@@ -4,12 +4,9 @@
 {% include head.html %}
 
 <body>
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5ZMTC37" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-  </noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  {% if jekyll.environment == 'production' and site.google_tag_manager %}
+  {% include gtm2.html %}
+  {% endif %}
 
   <div class="page-wrapper">
 

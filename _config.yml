@@ -9,7 +9,7 @@ social:
   name: Jeff Alessandrelli
   links:
     - https://jeffalessandrelli.tumblr.com
-google_site_verifications:
+google_analytics: "UA-113483194-1"
 
 # Build settings
 markdown: kramdown

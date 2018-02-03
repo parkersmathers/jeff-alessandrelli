@@ -37,7 +37,7 @@
     var posts = jsonp.response.posts
 
     posts.forEach(function (post) {
-      console.log(post);
+      // console.log(post);
       var item = document.createElement('li')
       var link = document.createElement('a')
 

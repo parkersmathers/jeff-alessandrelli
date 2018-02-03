@@ -12,6 +12,24 @@ social:
 google_analytics: "UA-113483194-1"
 google_tag_manager: "GTM-5ZMTC37"
 
+prose:
+  ignore:
+    - /_includes
+    - /_layouts
+    - /_sass
+    - _config.yml
+    - 404.html
+    - android-chrome*
+    - apple-touch-icon*
+    - browserconfig.xml
+    - CNAME
+    - favicon*
+    - Gemfile*
+    - mstile*
+    - README.md
+    - site.webmanifest
+    - sitemap.xml
+
 # Build settings
 markdown: kramdown
 theme: minima

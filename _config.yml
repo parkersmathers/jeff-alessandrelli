@@ -29,6 +29,7 @@ prose:
     - index.md
     - mstile*
     - README.md
+    - robots.txt
     - site.webmanifest
     - sitemap.xml
 

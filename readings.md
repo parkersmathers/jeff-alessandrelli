@@ -8,6 +8,8 @@ published: true
 ---
 Upcoming readings and events:
 
+- Thursday, 3/8 @ [Fodder & Shine](http://www.fodderandshine.com/), Tampa, FL ([Eyewear Publishing](https://store.eyewearpublishing.com/) AWP showcase)
+
 - Wednesday, 3/14 @ [University of Nebraska-Omaha Writer's Workshop](https://www.unomaha.edu/college-of-communication-fine-arts-and-media/writers-workshop/community-engagement/reading-series.php), Omaha, NE (with Trey Moody)
 
 - Sunday, 3/25 @ [Mount Analogue](http://www.mount-analogue.com/), Seattle, WA (with Angela Veronica Wong and Amy Lawless)

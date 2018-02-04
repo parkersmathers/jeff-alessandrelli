@@ -1,3 +1,0 @@
-User-agent: *
-Disallow: /index.html
-Sitemap: https://jeffalessandrelli.net/sitemap.xml

@@ -12,9 +12,14 @@
 
   <meta name="og:url" content="{{ site.url }}">
   <meta name="og:type" content="website">
-  <meta name="og:title" content="Jeff Alessandrelli">
+  <meta name="og:title" content="{{ site.title }}">
   <meta name="og:description" content="{{ site.description }}">
   <meta name="og:image" content="{{ "/assets/man-on-high.jpg" | relative_url }}">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="{{ site.title }}">
+  <meta name="twitter:url" content="{{ site.url }}">
+  <meta name="twitter:image" content="{{ "/assets/man-on-high.jpg" | relative_url }}">
 
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">

@@ -10,6 +10,12 @@
   <title>{{ site.title | escape }}{% if page.title %} + {{ page.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | escape }}">
 
+  <meta name="og:url" content="{{ site.url }}">
+  <meta name="og:type" content="website">
+  <meta name="og:title" content="Jeff Alessandrelli">
+  <meta name="og:description" content="{{ site.description }}">
+  <meta name="og:image" content="{{ "/assets/man-on-high.jpg" | relative_url }}">
+
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 

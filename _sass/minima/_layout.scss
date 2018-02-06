@@ -453,8 +453,16 @@
       width: 2em;
     }
 
+    p {
+      background-color: transparentize($background-color, .2);
+    }
+
     a {
       color: inherit;
+
+      &:hover {
+        color: pink;
+      }
     }
   }
 

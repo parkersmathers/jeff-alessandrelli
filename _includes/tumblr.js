@@ -37,7 +37,7 @@
     var posts = jsonp.response.posts
 
     posts.forEach(function (post) {
-      // console.log(post);
+      console.log(post);
       var item = document.createElement('li')
       var link = document.createElement('a')
 
@@ -50,7 +50,7 @@
         var doc = new DOMParser().parseFromString(post.caption, 'text/html')
         var caption = doc.body.innerHTML
 
-        image.src = post.photos[0].alt_sizes[3].url
+        image.src = post.photos[0].alt_sizes[0].url
 
         link.appendChild(image)
         image.insertAdjacentHTML('afterend', caption)

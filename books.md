@@ -10,8 +10,6 @@ published: true
   BIO: Jeff Alessandrelli is a writer. He lives in the United States of America. A slightly longer bio can be found at the [Poetry Foundation website](https://www.poetryfoundation.org/poets/jeff-alessandrelli).
 </span> 
 
-Jeff's electronic mail address is jalessandrelli1 at g mail dot com. 
-
 [![The Man on High: Essays on Skateboarding, Hip-Hop, Poetry and The Notorious B.I.G.]({{ "/assets/man-on-high.jpg" | absolute_url }})]()
 [![This Last Time Will Be the First]({{ "/assets/this-last-time.jpg" | absolute_url }})](http://burnsidereview.org/last-time-will-first/)
 [![Erik Satie Watusies His Way into Sound]({{ "/assets/erik-satie-watusies.jpg" | absolute_url }})](http://ravennapress.com/books/erik-satie-watusies-his-way-into-sound/)

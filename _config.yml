@@ -4,6 +4,7 @@ description: >- # ignore newlines until "baseurl:"
 baseurl: "" # subpath
 url: "https://jeffalessandrelli.net"
 tumblr_url: "https://jeffalessandrelli.tumblr.com/"
+instagram_url: "https://www.instagram.com/jalessandrelli/"
 logo: "/assets/bg_stars.gif"
 social:
   name: Jeff Alessandrelli

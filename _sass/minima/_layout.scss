@@ -227,8 +227,19 @@
     }
 
     p {
-      color: $text-color;
-      font-size: medium;
+			&,
+			a {
+				color: $text-color;
+				font-size: medium;
+			}
+
+			a {
+				text-shadow: #FC0 1px 0 10px;
+
+				&:hover {
+					color: limegreen;
+				}
+			}
     }
   }
 

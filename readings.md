@@ -18,6 +18,8 @@ published: true
 
 - Friday, 3/30 @ [Poetic Research Bureau](http://www.poeticresearch.com/), Los Angeles, CA (with Angela Veronica Wong and Amy Lawless) [FACEBOOK](https://www.facebook.com/poeticresearch/)
 
+- Thursday, 4/12 @ [Brothers Lounge](http://omahamagazine.com/articles/tag/brothers-lounge/), Omaha, NE (with a whole slaw of other great writers) [FACEBOOK](https://www.facebook.com/events/153861152003084/)
+
 **Deceased readings:**
 - ~~Thursday, 3/8 @ The Refinery, Tampa, FL, AWP Eyewear Publishing showcase~~
 

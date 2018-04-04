@@ -20,6 +20,8 @@ published: true
 
 - Thursday, 4/12 @ [Brothers Lounge](http://omahamagazine.com/articles/tag/brothers-lounge/), Omaha, NE (with a whole slaw of other great writers) [FACEBOOK](https://www.facebook.com/events/153861152003084/)
 
+- Monday, 7/9 @ [Curbside Books & Records](http://www.curbsidebooksrecords.com/), Chicago, IL (with other amazing  readers TBA) 
+
 **Deceased readings:**
 - ~~Thursday, 3/8 @ The Refinery, Tampa, FL, AWP Eyewear Publishing showcase~~
 

@@ -3,7 +3,7 @@ layout: press
 title: Weblogging
 permalink: /weblogging
 order: 7
-image: "/assets/blog.gif"
+image: "/images/blog.gif"
 ---
 ##### >
 I’m currently a weblogger for *The Kenyon Review*: [The Kenyon Review blog](https://www.kenyonreview.org/author/jeff-alessandrelli/)

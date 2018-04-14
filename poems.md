@@ -3,7 +3,7 @@ layout: list
 title: Poems
 permalink: /poems
 order: 2
-image: /assets/poem.gif
+image: /images/poem.gif
 published: true
 ---
 Poems and translations by moí have appeared in *The American Poetry Review*, *Boston Review*,

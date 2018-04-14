@@ -3,7 +3,7 @@ layout: page
 title: Fonograf
 permalink: /fonograf
 order: 8
-image: "/assets/fonograf-logo.jpg"
+image: "/images/fonograf-logo.jpg"
 ---
 <span>
   I currently run the vinyl-record only poetry press [*Fonograf Editions*](http://fonografeditions.com/), which has recently released albums by Eileen Myles, Rae Armantrout, Alice Notley, and Harmony Holiday. I wrote about Fonograf’s inception [here at The Fanzine](http://thefanzine.com/bad-business-is-good-art-fonograf-editions/).

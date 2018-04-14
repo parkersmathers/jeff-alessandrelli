@@ -3,7 +3,7 @@ layout: list
 title: Essays
 permalink: /essays
 order: 3
-image: /assets/rad2.gif
+image: /images/rad2.gif
 published: true
 ---
 Essays by me have appeared at *The American Poetry Review*, *The Millions*, *Denver Quarterly*, *Pleaides*, *Lit Hub*, *Poetry Northwest*, *Puerto del Sol*, and *Full Stop*. A few online can be found at:

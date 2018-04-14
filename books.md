@@ -3,7 +3,7 @@ layout: page
 title: Books
 permalink: /books
 order: 1
-image: /assets/colorbook.gif
+image: /images/colorbook.gif
 published: true
 ---
 <span>

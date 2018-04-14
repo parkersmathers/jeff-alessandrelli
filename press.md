@@ -3,7 +3,7 @@ layout: press
 title: Press
 permalink: /press
 order: 5
-image: /assets/press.gif
+image: /images/press.gif
 published: true
 ---
 ##### For *THIS LAST TIME WILL BE THE FIRST* (Finalist for the 2013 Burnside Review Press Book Award, subsequently published by Burnside Review in 2014):

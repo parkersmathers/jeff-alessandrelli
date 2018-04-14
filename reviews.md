@@ -3,7 +3,7 @@ layout: list
 title: Reviews
 permalink: /reviews
 order: 4
-image: "/assets/reviews.gif"
+image: "/images/reviews.gif"
 ---
 I semi-regularly review books for places like *Pleiades*, *Colorado Review*, *The Kenyon Review*, *Boston Review*, *The Rumpus*, and *Rain Taxi*. A few online can be found at:
 - [The Rumpus](http://therumpus.net/author/jeff-alessandrelli/)

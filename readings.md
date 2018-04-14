@@ -3,7 +3,7 @@ layout: list
 title: Readings
 permalink: /readings
 order: 9
-image: /assets/reading.gif
+image: /images/reading.gif
 published: true
 ---
 **Upcoming readings and events:**

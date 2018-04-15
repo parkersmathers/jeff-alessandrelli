@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-
 <div class="home">
 
   {{ content }}
@@ -9,6 +8,7 @@ layout: default
   <ul class="post-list"></ul>
 
 </div>
+
 {% for js in page.tumblr %}
   <script type="text/javascript">
     {% include {{ js }} %}

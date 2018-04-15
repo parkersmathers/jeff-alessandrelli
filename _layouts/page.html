@@ -1,14 +1,20 @@
 ---
 layout: default
 ---
-<article class="post">
+<article class="page">
 
-  <header class="post-header">
+  <header class="page-header">
     <img class="site-gif" src="{{ page.image | relative_url }}" alt="{{ page.title }}">
   </header>
 
-  <div class="post-content">
+  {% case page.title %}
+    {% when 'Press' or 'Weblogging' %}
+      {% assign class_name = 'press-content' %}
+    {% when 'Books' or 'Fonograf' %}
+      {% assign class_name = 'post-content' %}
+  {% endcase %}
+
+  <div class="{{ class_name | default: 'list-content' }}">
     {{ content }}
   </div>
-
 </article>

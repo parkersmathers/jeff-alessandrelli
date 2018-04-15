@@ -1,5 +1,5 @@
 /**
- * Reset some basic elements
+ * Reset
  */
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
@@ -12,14 +12,13 @@ dl, dd, ol, ul, figure, img {
   box-sizing: border-box;
 }
 
-
-
 /**
- * Basic styling
+ * Basic
  */
 html, body {
   width: 100%;
   height: 100%;
+  overflow: scroll;
 }
 
 body {
@@ -30,10 +29,8 @@ body {
   background-image: url('bg_stars.gif');
 }
 
-
-
 /**
- * Set `margin-bottom` to maintain vertical rhythm
+ * Vertical rhythm
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
@@ -42,8 +39,6 @@ ul, ol, dl, figure,
   margin-bottom: $spacing-unit / 2;
 }
 
-
-
 /**
  * Images
  */
@@ -51,8 +46,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
 
 /**
  * Lists
@@ -64,16 +57,12 @@ li {
   }
 }
 
-
-
 /**
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
 }
-
-
 
 /**
  * Links
@@ -102,8 +91,6 @@ a {
   flex-direction: column;
 }
 
-
-
 /**
  * Wrapper
  */
@@ -126,7 +113,7 @@ a {
   }
 
   @include media-query($on-palm) {
-    padding-top: $spacing-unit;
+    padding-top: $spacing-unit / 2;
   }
 }
 

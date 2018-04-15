@@ -38,7 +38,6 @@
 
   @include media-query($on-palm) {
     margin-left: 0;
-    // @include relative-font-size(1.25);
     font-size: x-large;
   }
 }
@@ -162,12 +161,16 @@
   list-style: none;
   margin-left: 0;
   flex: 1;
+
+  @include media-query($on-palm) {
+    margin-bottom: 0;
+  }
 }
 
 .social-media-list {
 	display: flex;
 	li {
-		padding-right: $spacing-unit/2;
+		padding-right: $spacing-unit / 2;
 	}
   a {
     text-decoration: none;
@@ -179,8 +182,8 @@
   }
 
   @include media-query($on-palm) {
-    line-height: 1.8;
-		padding-bottom: $spacing-unit/2;
+    line-height: 2.5;
+		padding-bottom: $spacing-unit;
   }
 }
 
@@ -199,7 +202,7 @@
   @include relative-font-size(1.25);
 }
 
-.post {
+.page {
   display: flex;
   justify-content: space-around;
 
@@ -264,9 +267,9 @@
 
 
 /**
- * Posts
+ * Pages
  */
-.post-header {
+.page-header {
   padding-top: 20px;
   flex: 1;
 
@@ -513,8 +516,6 @@
   }
 }
 
-
-
 //
 // Press content: Press, Weblogging
 //
@@ -538,7 +539,6 @@
     font-size: large;
     display: inline;
     padding: 10px 0;
-    line-height: 1.5;
     margin-right: 150px;
     vertical-align: middle;
     color: $text-color;

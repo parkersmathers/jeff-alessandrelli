@@ -1,9 +1,10 @@
 <header class="site-header" role="banner">
-
   <div class="wrapper">
+
     {% assign sort_pages = site.pages | sort:'order' %}
     {% assign default_paths = sort_pages | map: "path" %}
     {% assign page_paths = site.header_pages | default: default_paths %}
+
     <a class="site-title" href="{{ "/" | relative_url }}" style="float:none;">{{ site.title | escape }}</a>
 
     {% if page_paths %}

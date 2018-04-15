@@ -1,5 +1,5 @@
 ---
-layout: press
+layout: page
 title: Press
 permalink: /press
 order: 5

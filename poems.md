@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: page
 title: Poems
 permalink: /poems
 order: 2

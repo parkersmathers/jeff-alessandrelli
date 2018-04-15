@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: page
 title: Reviews
 permalink: /reviews
 order: 4

@@ -1,5 +1,5 @@
 ---
-layout: list
+layout: page
 title: Readings
 permalink: /readings
 order: 9
@@ -12,7 +12,7 @@ published: true
 
 - Monday, 3/26 @ [Powell's Books](http://www.powells.com/), Portland, OR (with Angela Veronica Wong, Amy Lawless and a whole slaw of other great writers) [FACEBOOK](https://www.facebook.com/events/198538264226428/)
 
-- Tuesday, 3/27 @ [Independendent Publishing Resource Center](https://www.iprc.org/), Portland, OR (with Angela Veronica Wong, Emily Kendal Frey and Amy Lawless) [FACEBOOK](https://www.facebook.com/events/157090058436994/) 
+- Tuesday, 3/27 @ [Independendent Publishing Resource Center](https://www.iprc.org/), Portland, OR (with Angela Veronica Wong, Emily Kendal Frey and Amy Lawless) [FACEBOOK](https://www.facebook.com/events/157090058436994/)
 
 - Wednesday, 3/28 @ [Moe's Books](http://www.moesbooks.com/events/), Berkeley, CA (with Angela Veronica Wong, Amy Lawless and Mg Roberts) [FACEBOOK](https://www.facebook.com/events/340453223134307/)
 
@@ -20,7 +20,7 @@ published: true
 
 - Thursday, 4/12 @ [Brothers Lounge](http://omahamagazine.com/articles/tag/brothers-lounge/), Omaha, NE (with a whole slaw of other great writers) [FACEBOOK](https://www.facebook.com/events/153861152003084/)
 
-- Monday, 7/9 @ [Curbside Books & Records](http://www.curbsidebooksrecords.com/), Chicago, IL (with other amazing  readers TBA) 
+- Monday, 7/9 @ [Curbside Books & Records](http://www.curbsidebooksrecords.com/), Chicago, IL (with other amazing  readers TBA)
 
 **Deceased readings:**
 - ~~Thursday, 3/8 @ The Refinery, Tampa, FL, AWP Eyewear Publishing showcase~~

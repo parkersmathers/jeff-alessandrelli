@@ -1,20 +1,10 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
-# Run Jekyll with `bundle exec`: bundle exec jekyll serve
+git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 
-# gem "jekyll", "~> 3.6.2"
-
-# Theme:
-gem "minima", "~> 2.0"
-
-# Development:
-gem "image_optim"
-gem "image_optim_pack"
-
-# To upgrade, run `bundle update github-pages`.
-gem "github-pages", group: :jekyll_plugins
-
-# Plugins:
+gem "jekyll", "~> 3.7"
 group :jekyll_plugins do
-  gem 'jekyll-livereload'
+  gem "jekyll-tidy", "~> 0.2"
 end

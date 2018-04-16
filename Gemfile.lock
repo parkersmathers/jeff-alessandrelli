@@ -64,7 +64,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.7)
-  jekyll-tidy
+  jekyll-tidy (~> 0.2)
 
 BUNDLED WITH
    1.16.1

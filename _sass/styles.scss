@@ -15,11 +15,21 @@ $text-shadow:      #fc0 5px 0 10px;
 $grey-color:         #828282;
 $grey-color-light:   lighten($grey-color, 40%);
 $grey-color-dark:    darken($grey-color, 25%);
-$green-color:        lawngreen;
-$green-color-light:  lighten($green-color, 25%);
-$green-color-bright: limegreen;
-$blue-color-dark:    midnightblue;
-$highlight-colors:   mistyrose, lavender, powderblue, lemonchiffon, palegreen;
+$lawngreen:          #7cfc00;
+$green-color-light:  lighten($lawngreen, 25%);
+$limegreen:          #32cd32;
+$blue-color-dark:    #191970;
+
+$pink: #ffc0cb;
+$hotpink: #ff69b4;
+$fuchsia: #f0f;
+$skyblue: #87ceeb;
+$cornflowerblue: #6495ed;
+$green: #008000;
+$yellow: #fc0;
+$red: #f00;
+$maroon: #800000;
+$orange: #ffa500;
 
 // Width of content
 $content-width:    1200px;

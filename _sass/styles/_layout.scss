@@ -3,7 +3,7 @@
 // =========
 .site-header {
   background-color: $background-color;
-  border-bottom: 3px solid maroon;
+  border-bottom: 3px solid $maroon;
   min-height: $spacing-unit * 1.865;
   padding: 20px 0 10px;
   position: relative; // Positioning context for the mobile navigation icon
@@ -16,7 +16,7 @@
 
   &,
   &:visited {
-    border: 1px solid red;
+    border: 1px solid $red;
     color: $green-color-light;
     text-decoration: none;
     text-transform: uppercase;
@@ -44,10 +44,10 @@
     background-color: $text-color;
     color: $background-color;
     font-size: medium;
-    text-decoration: underline solid red;
+    text-decoration: underline solid $red;
 
     &:hover {
-      color: fuchsia;
+      color: $fuchsia;
     }
 
     // Gaps between nav items, but not on the last one
@@ -88,7 +88,7 @@
 
       > svg {
         path {
-          fill: skyblue;
+          fill: $skyblue;
         }
       }
     }
@@ -123,7 +123,7 @@
   @include media-query($on-palm) {
     padding: 0;
   }
-  background-color: green;
+  background-color: $green;
   line-height: $base-line-height * 1.1;
   padding: 0 $spacing-unit $spacing-unit / 2;
   position: relative;
@@ -135,7 +135,7 @@
   @include media-query($on-palm) {
     flex-direction: column;
   }
-  color: orange;
+  color: $orange;
   display: flex;
   font-size: small;
   font-weight: bold;
@@ -166,7 +166,7 @@
     text-decoration: none;
 
     &:hover {
-      color: hotpink;
+      color: $hotpink;
     }
   }
 
@@ -217,7 +217,7 @@
   @include media-query($on-palm) {
     width: 100px;
   }
-  border: 1px solid pink;
+  border: 1px solid $pink;
   height: auto;
   max-width: 80%;
   min-width: 200px;
@@ -227,7 +227,7 @@
 // .post-title {
 //   font-size: small;
 //   text-transform: uppercase;
-//   color: cornflowerblue;
+//   color: $cornflowerblue;
 //   background-color: $text-color;
 //   font-weight: bold;
 //   display: inline-block;
@@ -264,7 +264,7 @@
 
       span {
         background-color: transparentize($background-color, .2);
-        color: $green-color;
+        color: $lawngreen;
         font-size: large;
         line-height: $base-line-height * 1.2;
         margin: 0 auto;
@@ -275,7 +275,7 @@
           text-decoration: none underline;
 
           &:hover {
-            color: pink;
+            color: $pink;
           }
         }
       }
@@ -293,7 +293,7 @@
         padding: $spacing-unit / 2;
 
         img {
-          border: 1px solid fuchsia;
+          border: 1px solid $fuchsia;
           height: auto;
           width: 100%;
         }
@@ -399,7 +399,7 @@
 
   p {
     background-color: transparentize($background-color, .2);
-    color: $green-color;
+    color: $lawngreen;
     float: left;
     font-size: large;
     line-height: 1.75;
@@ -411,7 +411,7 @@
     width: 88%;
 
     li {
-      color: yellow;
+      color: $yellow;
       font-size: large;
       line-height: $base-line-height * 1.5;
 
@@ -431,7 +431,7 @@
       color: inherit;
 
       &:hover {
-        color: pink;
+        color: $pink;
       }
     }
   }
@@ -478,7 +478,7 @@
 
   h5 {
     background-color: $background-color;
-    color: skyblue;
+    color: $skyblue;
     font-size: small;
     font-style: italic;
     letter-spacing: .2em;
@@ -505,10 +505,10 @@
   }
 
   a {
-    color: hotpink;
+    color: $hotpink;
 
     &:hover {
-      color: $green-color;
+      color: $lawngreen;
     }
   }
 }

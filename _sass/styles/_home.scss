@@ -9,12 +9,12 @@
     margin: $spacing-unit;
 
     > a {
-      color: pink;
+      color: $pink;
       font-size: x-large;
       line-height: 2.5;
 
       &:hover {
-        color: $green-color;
+        color: $lawngreen;
       }
     }
 
@@ -26,10 +26,10 @@
       }
 
       a {
-        text-shadow: #fc0 1px 0 10px;
+        text-shadow: $yellow 1px 0 10px;
 
         &:hover {
-          color: $green-color-bright;
+          color: $limegreen;
         }
       }
     }
@@ -49,6 +49,6 @@
 }
 
 .tumblr-link {
-  color: hotpink;
+  color: $hotpink;
   display: block;
 }

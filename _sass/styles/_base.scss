@@ -1,55 +1,72 @@
-/**
- * Reset
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure, img {
+// Reset
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure,
+img {
   margin: 0;
   padding: 0;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
-/**
- * Basic
- */
-html, body {
-  width: 100%;
+// Basic
+html,
+body {
   height: 100%;
   overflow: scroll;
+  width: 100%;
 }
 
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
   background-color: $background-color;
-  letter-spacing: .1em;
   background-image: url('/images/bg_stars.gif');
+  color: $text-color;
+  font: $base-font-weight #{$base-font-size} / #{$base-line-height} $base-font-family;
+  letter-spacing: .1em;
 }
 
-/**
- * Vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
+// Vertical rhythm
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
   margin-bottom: $spacing-unit / 2;
 }
 
-/**
- * Images
- */
+// Images
 img {
   max-width: 100%;
   vertical-align: middle;
 }
 
-/**
- * Lists
- */
+// Lists
 li {
   > ul,
   > ol {
@@ -57,16 +74,17 @@ li {
   }
 }
 
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: $base-font-weight;
 }
 
-/**
- * Links
- */
+// Links
 a {
   text-decoration: underline;
 
@@ -75,41 +93,33 @@ a {
   }
 
   &:hover {
-    color: $green-color;
+    color: $lawngreen;
   }
 }
 
-/**
- * Wrapper
- */
+// Wrappers
 .wrapper {
-  width: 100%;
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  padding-top: $spacing-unit / 2;
   @extend %clearfix;
-
   @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
+    max-width: calc(#{$content-width} - (#{$spacing-unit}));
     padding-left: $spacing-unit / 2;
+    padding-right: $spacing-unit / 2;
   }
-
   @include media-query($on-palm) {
     padding-top: $spacing-unit / 2;
   }
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  padding-top: $spacing-unit / 2;
+  width: 100%;
 }
 
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
+// Clearfix
+%clearfix::after {
   clear: both;
+  content: '';
+  display: table;
 }

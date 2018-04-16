@@ -1,0 +1,45 @@
+//
+// Styling for pages: Press, Weblogging
+//
+.press-content {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  margin: 0 auto;
+
+  h5 {
+    background-color: $background-color;
+    color: $skyblue;
+    font-size: small;
+    font-style: italic;
+    letter-spacing: .2em;
+    padding-top: 20px;
+  }
+
+  p {
+    @include media-query($on-laptop) {
+      margin-right: 0;
+
+      img {
+        display: block;
+        float: right;
+        padding-right: $spacing-unit;
+      }
+    }
+    background-color: $background-color;
+    color: $text-color;
+    display: inline;
+    font-size: large;
+    margin-right: 150px;
+    padding: 10px 0;
+    vertical-align: middle;
+  }
+
+  a {
+    color: $hotpink;
+
+    &:hover {
+      color: $lawngreen;
+    }
+  }
+}

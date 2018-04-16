@@ -1,0 +1,83 @@
+//
+// Styling for pages: Poems, Essays, Reviews, Interviews, Readings
+//
+.list-content {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  justify-content: space-between;
+
+  // GIF
+  img {
+    width: auto;
+  }
+
+  p {
+    background-color: transparentize($background-color, .2);
+    color: $lawngreen;
+    float: left;
+    font-size: large;
+    line-height: 1.75;
+    padding: 30px 150px 0 0;
+  }
+
+  ul {
+    list-style: none;
+    width: 88%;
+
+    li {
+      color: $yellow;
+      font-size: large;
+      line-height: $base-line-height * 1.5;
+
+      &::before {
+        color: inherit;
+        content: '•';
+        display: inline-block;
+        width: 2em;
+      }
+    }
+
+    p {
+      background-color: transparentize($background-color, .2);
+    }
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: $pink;
+      }
+    }
+  }
+
+  @include media-query($on-palm) {
+    p,
+    ul {
+      margin-bottom: 0;
+      width: auto;
+    }
+
+    p {
+      padding: 20px 0 0;
+    }
+
+    ul {
+      li {
+        &::before {
+          margin-left: 0;
+        }
+      }
+    }
+
+    li {
+      &:last-child {
+        padding-bottom: $spacing-unit;
+      }
+    }
+  }
+
+  @include media-query($on-laptop) {
+    flex: 2;
+  }
+}

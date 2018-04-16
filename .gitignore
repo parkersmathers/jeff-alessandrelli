@@ -5,3 +5,4 @@ _site/
 _tumblr_client*
 _secret.yml
 .env
+.sass-lint.yml

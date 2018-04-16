@@ -1,25 +1,25 @@
-@charset "utf-8";
+@charset 'utf-8';
 
 $base-font-family: Times, serif;
 $base-font-size:   14px;
 $base-font-weight: 400;
-$small-font-size:  $base-font-size * 0.875;
+$small-font-size:  $base-font-size * .875;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
 $text-color:       #fdfdfd;
 $background-color: #111;
-$text-shadow:      #FC0 5px 0 10px;
+$text-shadow:      #fc0 5px 0 10px;
 
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-$green-color:      lawngreen;
-$green-color-light: lighten($green-color, 25%);
+$grey-color:         #828282;
+$grey-color-light:   lighten($grey-color, 40%);
+$grey-color-dark:    darken($grey-color, 25%);
+$green-color:        lawngreen;
+$green-color-light:  lighten($green-color, 25%);
 $green-color-bright: limegreen;
-$blue-color-dark: midnightblue;
-$highlight-colors: mistyrose, lavender, powderblue, lemonchiffon, palegreen;
+$blue-color-dark:    midnightblue;
+$highlight-colors:   mistyrose, lavender, powderblue, lemonchiffon, palegreen;
 
 // Width of content
 $content-width:    1200px;
@@ -38,6 +38,7 @@ $on-laptop:        1000px;
 
 // Import partials
 @import
-  "styles/base",
-  "styles/layout"
+'styles/base',
+'styles/layout',
+'styles/home'
 ;

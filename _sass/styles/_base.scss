@@ -26,7 +26,7 @@ body {
   color: $text-color;
   background-color: $background-color;
   letter-spacing: .1em;
-  background-image: url('bg_stars.gif');
+  background-image: url('/images/bg_stars.gif');
 }
 
 /**
@@ -79,18 +79,6 @@ a {
   }
 }
 
-
-
-/**
- * Page Wrapper
-**/
-.page-wrapper {
-  min-height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 /**
  * Wrapper
  */
@@ -116,8 +104,6 @@ a {
     padding-top: $spacing-unit / 2;
   }
 }
-
-
 
 /**
  * Clearfix

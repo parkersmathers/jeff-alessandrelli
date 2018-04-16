@@ -1,40 +1,6 @@
 // Tumblr content (home page)
 
 .tumblr-posts {
-  margin-left: $spacing-unit / 2;
-
-  > li {
-    background-color: transparentize($background-color, .2);
-    border-bottom: 10px solid $blue-color-dark;
-    margin: $spacing-unit;
-
-    > a {
-      color: $pink;
-      font-size: x-large;
-      line-height: 2.5;
-
-      &:hover {
-        color: $lawngreen;
-      }
-    }
-
-    p {
-      &,
-      a {
-        color: $text-color;
-        font-size: medium;
-      }
-
-      a {
-        text-shadow: $yellow 1px 0 10px;
-
-        &:hover {
-          color: $limegreen;
-        }
-      }
-    }
-  }
-
   @include media-query($on-palm) {
     margin-left: 0;
 
@@ -45,7 +11,40 @@
         line-height: 2;
       }
     }
-  };
+  }
+  margin-left: $spacing-unit / 2;
+}
+
+.tumblr-post {
+  background-color: transparentize($background-color, .2);
+  border-bottom: 10px solid $blue-color-dark;
+  margin: $spacing-unit;
+
+  > a {
+    color: $pink;
+    font-size: x-large;
+    line-height: 2.5;
+
+    &:hover {
+      color: $lawngreen;
+    }
+  }
+
+  p {
+    &,
+    a {
+      color: $text-color;
+      font-size: medium;
+    }
+
+    a {
+      text-shadow: $yellow-shadow 1px 0 10px;
+
+      &:hover {
+        color: $limegreen;
+      }
+    }
+  }
 }
 
 .tumblr-link {

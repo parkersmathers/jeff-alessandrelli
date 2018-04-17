@@ -1,29 +1,43 @@
-// Tumblr content (home page)
+//
+// Tumblr content styling (home page)
+//
+
+.home {
+  @include media-query($on-palm) {
+    max-width: 90%;
+  }
+  margin: 0 auto;
+  max-width: 80%;
+}
 
 .tumblr-posts {
   @include media-query($on-palm) {
     margin-left: 0;
 
-    > li {
+    li {
       margin: $spacing-unit / 2;
 
-      > a {
+      a {
         line-height: 2;
       }
     }
   }
-  margin-left: $spacing-unit / 2;
+  list-style: none;
+
+  li {
+    background-color: transparentize($background-color, .2);
+    border-bottom: 5px solid $blue-color-dark;
+    margin: $spacing-unit * 2 0;
+    padding-bottom: $spacing-unit * 2;
+  }
 }
 
 .tumblr-post {
-  background-color: transparentize($background-color, .2);
-  border-bottom: 10px solid $blue-color-dark;
-  margin: $spacing-unit;
 
-  > a {
+  a {
     color: $pink;
     font-size: x-large;
-    line-height: 2.5;
+    text-decoration: none;
 
     &:hover {
       color: $lawngreen;
@@ -31,10 +45,16 @@
   }
 
   p {
+    margin-bottom: 0;
+
     &,
     a {
       color: $text-color;
       font-size: medium;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      word-wrap: break-word;
     }
 
     a {
@@ -45,9 +65,4 @@
       }
     }
   }
-}
-
-.tumblr-link {
-  color: $hotpink;
-  display: block;
 }

@@ -1,6 +1,6 @@
 (function () {
-  var list = document.querySelector('.post-list')
-  var url = 'https://api.tumblr.com/v2/blog/jeffalessandrelli.tumblr.com/posts?api_key=CBqFvQ7v98cDJ7gbXm4WlAQ4mvKxYN9anw1vzbrQWyPvgIjnGO&limit=5'
+  var list = document.querySelector('.tumblr-posts')
+  var url = 'https://api.tumblr.com/v2/blog/jeffalessandrelli.tumblr.com/posts?api_key=CBqFvQ7v98cDJ7gbXm4WlAQ4mvKxYN9anw1vzbrQWyPvgIjnGO&limit=10'
 
   var cachedFetch = function (url, options) {
     var cacheKey = url
@@ -29,40 +29,51 @@
     .then(obj => {
       displayResults(obj)
     }).catch(err => {
-      console.log('error getting tumblr data')
+      console.log('error displaying tumblr data')
     })
 
   function displayResults(jsonp) {
+
     var posts = jsonp.response.posts
+    console.log(posts);
 
     posts.forEach(function (post) {
-      var item = document.createElement('li')
-      var link = document.createElement('a')
 
-      link.setAttribute('class', 'post-link')
+      var item = document.createElement('li')
+      item.classList.add('tumblr-post')
+
+      var link = document.createElement('a')
       link.setAttribute('target', '_blank')
       link.setAttribute('rel', 'noopener')
 
       if (post.type === 'photo') {
-        var image = document.createElement('img')
-        var doc = new DOMParser().parseFromString(post.caption, 'text/html')
-        var caption = doc.body.innerHTML
+        var photo = document.createElement('img')
+        photo.src = post.photos[0].alt_sizes[0].url
 
-        image.src = post.photos[0].alt_sizes[0].url
+        link.appendChild(photo)
 
-        link.appendChild(image)
-        image.insertAdjacentHTML('afterend', caption)
+        item.classList.add('tumblr-photo')
         item.appendChild(link)
+
+        if (post.caption !== '') {
+          var doc = new DOMParser().parseFromString(post.caption, 'text/html')
+          var caption = doc.body.innerHTML
+          link.insertAdjacentHTML('afterend', caption)
+        }
       }
 
       if (post.type === 'link') {
+        item.classList.add('tumblr-link');
         link.textContent = post.title
         link.href = post.url
-        var doc = new DOMParser().parseFromString(post.description, 'text/html')
-        var comment = doc.body.innerHTML
 
         item.appendChild(link)
-        link.insertAdjacentHTML('afterend', comment)
+
+        if (post.description !== '') {
+          var doc = new DOMParser().parseFromString(post.description, 'text/html')
+          var comment = doc.body.innerHTML
+          link.insertAdjacentHTML('afterend', comment)
+        }
       }
 
       if (post.type === 'text') {
